@@ -98,14 +98,38 @@
     </p>
     <form action="" method="get">
         <label for="Benutzername">Benutzername:</label>
-        <input id="Benutzername" name="Benutzername" type="text">
+        <input id="Benutzername" name="Benutzername" type="text" placeholder="Benutzernamen eingeben" required>
         <br>
         <br>
-        <label for="">Passwort:</label>
-        <input id="Passwort" name="Passwort" type="password">
+        <label for="Passwort">Passwort:</label>
+        <input id="Passwort" name="Passwort" type="password" placeholder="Passwort eingeben" required>
         <br>
         <br>
-        <input type="submit" value="Anmelden">
+        <label for="Email">E-Mail:</label>
+        <input type="email" name="Email" id="Email" placeholder="E-Mail eingeben" required>
+        <br>
+        <br>
+        <label for="Homepage">Homepage:</label>
+        <input type="url" name="Homepage" id="Homepage" placeholder="Homepage eingeben">
+        <br>
+        <br>
+        <label for="Telefonnummer">Telefonnummer:</label>
+        <input type="tel" name="Telefonnummer" id="Telefonnummer" placeholder="Telefonnummer eingeben">
+        <br>
+        <br>
+        <label for="Alter">Alter:</label>
+        <input type="number" name="Alter" id="Alter" value="20" min="0" max="150" step="0,01">
+        <br>
+        <br>
+        <label for="Geburtsdatum">Geburtsdatum:</label>
+        <input type="date" name="Geburtsdatum" id="Geburtsdatum" min="2000-01-01" max="2026-04-02">
+        <br>
+        <br>
+        <label for="Zeit">Zeit:</label>
+        <input type="time" name="Zeit" id="Zeit">
+        <br>
+        <br>
+        <input type="submit" value="Registrieren"> <input type="reset" value="Zurücksetzen">
     </form>
     <br>
     <br>
